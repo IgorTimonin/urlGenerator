@@ -1,2 +1,3 @@
-urlGenerator.
-Создаёт Url адрес из переданной строки, заменяя спец символы и удаляя лишнее. 
+# urlGenerator.
+* Creates an Url address from the given string, replacing special characters and removing unnecessary ones.
+* Can create an address in transliteration from Cyrillic
