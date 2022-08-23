@@ -24,7 +24,6 @@ const urlGenerator = (string) => {
       .replace(/\-\-+/g, '-') // заменяем несколько - на один -
       .replace(/^-+/, '') // обрезаем - в начале строки
       .replace(/-+$/, '') // обрезаем - в конце строки
-  }`;
+  }${port}`;
 };
-
 module.exports = urlGenerator;
