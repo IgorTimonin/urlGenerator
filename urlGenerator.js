@@ -1,4 +1,4 @@
-const { transliterate } = require("./componets/transliterator");
+const { transliterate } = require("./components/transliterator");
 
 const urlGenerator = (string) => {
   const protocol = 'https://';
@@ -26,5 +26,5 @@ const urlGenerator = (string) => {
       .replace(/-+$/, '') // обрезаем - в конце строки
   }`;
 };
-console.log(urlGenerator('видео о непростой жизни Гималайской патагонской мары'));
+
 module.exports = urlGenerator;
