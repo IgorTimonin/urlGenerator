@@ -1,14 +1,14 @@
 const urlGenerator = (string) => {
-  const protocol = 'http://';
+  const protocol = 'https://';
   const subdomain = 'example'
   const domain = 'mysite';
-  const zone = 'ru'
+  const zone = 'com'
 
   const restrictedCharacters = 'àáâäæãåāăąçćčđďèéêëēėęěğǵḧîïíīįìłḿñńǹňôöòóœøōõṕŕřßśšşșťțûüùúūǘůűųẃẍÿýžźż·/_,:;';
   const charactersReplacements = 'aaaaaaaaaacccddeeeeeeeegghiiiiiilmnnnnooooooooprrsssssttuuuuuuuuuwxyyzzz------';
   const specialCharactersRegExp = new RegExp(restrictedCharacters.split('').join('|'), 'g');
 
-  return `${protocol}${subdomain}${domain}${zone}${
+  return `${protocol}${subdomain}.${domain}.${zone}/${
     string
       .toString()
       .toLowerCase()
